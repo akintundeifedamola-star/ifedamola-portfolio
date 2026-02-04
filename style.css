@@ -35,7 +35,7 @@ h2 {
 /* ================= HERO SECTION ================= */
 #hero {
     height: 100vh;
-    background-image: url("./your-image.jpg");
+    background-image: url("./images/your-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,4 +262,57 @@ footer {
     0% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
     100% { transform: translateY(0); }
+}
+
+
+/* ================= WHATSAPP FORM ================= */
+.whatsapp-form {
+    max-width: 600px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.whatsapp-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whatsapp-form input,
+.whatsapp-form textarea {
+    padding: 15px;
+    background: #000;
+    border: 2px solid gold;
+    color: gold;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.whatsapp-form input::placeholder,
+.whatsapp-form textarea::placeholder {
+    color: #c9a84f;
+}
+
+.whatsapp-form input:focus,
+.whatsapp-form textarea:focus {
+    border-color: #c46b28; /* orange rust */
+}
+
+.whatsapp-form button {
+    padding: 15px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: 2px solid gold;
+    background: transparent;
+    color: gold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.whatsapp-form button:hover {
+    background: gold; /* Gold */
+    border-color: gold;
+    color: black;
+    transform: scale(1.05);
 }
